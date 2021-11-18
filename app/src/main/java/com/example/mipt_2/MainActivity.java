@@ -118,4 +118,10 @@ public class MainActivity extends AppCompatActivity {
         op = String.valueOf(r);
         ed1.setText(op);
     }
+
+    public void delEvent(View view) {
+        oldNumber = ed1.getText().toString();
+        oldNumber = oldNumber.substring(0, oldNumber.length() - 1);
+        ed1.setText(oldNumber);
+    }
 }
